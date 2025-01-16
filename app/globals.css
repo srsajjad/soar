@@ -10,6 +10,22 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 10px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(113, 142, 191, 0.3);
+    border-radius: 10px;
+    transition: background 0.3s ease;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(52, 60, 106, 0.5);
+  }
 }
 
 @layer base {

@@ -6,17 +6,18 @@ import { motion } from "framer-motion";
 export default function CreditCards() {
   return (
     <div
-      className="flex snap-x snap-mandatory gap-3 overflow-x-auto pb-4 lg:gap-4 lg:pb-0 h-full max-w-3xl mx-auto 
-      scrollbar-hide 
-      [&::-webkit-scrollbar]:hidden 
-      [-ms-overflow-style:none] 
-      [scrollbar-width:none]"
+      className="flex snap-x snap-mandatory gap-3 
+      overflow-x-auto lg:overflow-x-visible 
+      pb-4 lg:gap-4 lg:pb-0 
+      h-full max-w-3xl
+      lg:justify-center 
+      custom-scrollbar"
     >
       <motion.div
         whileHover={{ y: -5 }}
-        className="relative w-full max-w-sm flex-none snap-center h-full"
+        className="relative w-full max-w-sm flex-none lg:flex-1 snap-center h-full"
       >
-        <Card className="bg-[#343c6a] p-5 text-white h-full">
+        <Card className="bg-[#343c6a] p-5 text-white w-full h-full">
           <div className="mb-4 flex justify-between">
             <span className="text-sm">Balance</span>
             <div className="h-8 w-12 rounded bg-white/10" />
@@ -37,9 +38,9 @@ export default function CreditCards() {
       </motion.div>
       <motion.div
         whileHover={{ y: -5 }}
-        className="relative w-full max-w-sm flex-none snap-center h-full"
+        className="relative w-full max-w-sm flex-none lg:flex-1 snap-center h-full"
       >
-        <Card className="border-2 p-5 bg-[#ffffff] h-full">
+        <Card className="border-2 p-5 bg-[#ffffff] w-full h-full">
           <div className="mb-4 flex justify-between">
             <span className="text-sm text-[#718ebf]">Balance</span>
             <div className="h-8 w-12 rounded bg-[#f5f7fa]" />
